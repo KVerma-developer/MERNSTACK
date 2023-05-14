@@ -85,6 +85,9 @@
 import { useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import GoogleLogin from '../Google/googlelogin';
+import Google from "../Google/Google";
+
 
 const Login = () => {
   const [data, setData] = useState({ email: "", password: "" });
@@ -139,6 +142,12 @@ const Login = () => {
           <button type="submit" className="bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600 transition-colors duration-200">
             Sign In
           </button>
+          {/* <-----------------google-------------------------> */}
+          <Google/>
+          {/* <------------------google------------------------> */}
+
+          
+		 
         </form>
         <div className="text-center mt-4">
           <h1 className="text-lg mb-2">New Here?</h1>

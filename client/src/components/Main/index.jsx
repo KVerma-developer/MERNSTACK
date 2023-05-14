@@ -1,28 +1,24 @@
-
 import Navbar from "../Navbar/Navbar";
+import GoogleDetails from "../Google/GoogleDestails";
+
+
 
 const Main = () => {
-	// const handleLogout = () => {
-	// 	localStorage.removeItem("token");
-	// 	window.location.reload();
-	// };
+	
+	
 
 	return (
 		<>
 		<Navbar/>
+		<div className="flex flex-col justify-center items-center h-screen t-16">
+  <p className="text-4xl text-blue-800 text-gradient bg-gradient-to-r from-blue-400 to-yellow-200">WELCOME</p>
+  <h1 className="text-2xl">We are The Developer</h1>
+</div>
+		{/* <GoogleDetails/> */}
 		
-		{/* <div className={styles.main_container}>
-			
-			<nav className={styles.navbar}>
-				<h1>fakebook</h1>
-				<button className={styles.white_btn} onClick={handleLogout}>
-					Logout
-				</button>
-			</nav>
-			
+		
 
-
-		</div> */}
+		
 		</>
 	);
 };
