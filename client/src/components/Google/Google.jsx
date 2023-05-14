@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { googleLogout, useGoogleLogin } from '@react-oauth/google';
 import axios from 'axios';
-import GoogleButton from 'react-google-button';
+import GoogleButton from 'react-google-button'
+
+
+
 
 
 
@@ -28,6 +31,7 @@ const Google = () => {
                     })
                     .then((res) => {
                         setProfile(res.data);
+                       
                     })
                     .catch((err) => console.log(err));
             }
@@ -40,9 +44,10 @@ const Google = () => {
         googleLogout();
         setProfile(null);
     };
+    
   return (
-    <div className='mt-20'>
-            <h2>React Google Login</h2>
+   <>
+           
             <br />
             <br />
             {profile ? (
@@ -57,17 +62,19 @@ const Google = () => {
                     <br />
                     <br />
                     <button onClick={logOut}>Log out</button>
+                    
+
                 </div>
+               
             ) : (
                 
-                // <button onClick={() => login()}>Sign in with Google 🚀 </button>
-                <GoogleButton
-                onClick={() => login()}
-                />
+            <GoogleButton onClick={() => login()} />
+
+
 
                 
             )}
-        </div>
+        </>
   )
 }
 

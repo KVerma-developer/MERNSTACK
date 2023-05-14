@@ -68,7 +68,7 @@ import Signup from "./components/Singup";
 import Login from "./components/Login";
 import Contact from "./components/ContactFom/Contact";
 import About from "./components/About/about";
-import Google from "./components/Google/Google";
+
 
 ///--------------------
 
@@ -96,7 +96,7 @@ function App() {
 			<Route path="/" element={<Navigate replace to="/login" />} />
 			<Route path="/contact" element={<Navigate replace to="/login" />} />
 			<Route path="/about" element={<Navigate replace to="/signup" />} />
-			<Route path="/google" element={<Google />} />
+			
 
 
 

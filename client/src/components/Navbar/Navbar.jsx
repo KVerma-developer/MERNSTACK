@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// import Logo from '../assets/logo2.png';
+import Logo from '../../assets/logo2.png';
 
 const Navbar = () => {
 
@@ -14,8 +14,8 @@ const Navbar = () => {
 <nav className="shadow-lg fixed top-0 left-0 w-full bg-gradient-to-r from-purple-500 to-sky-500 p-4">
   <div className="flex items-center justify-between">
     <div className="flex items-center">
-      {/* <img src={Logo}  alt="Logo" className="h-12 mr-4"/> */}
-      <h1 className="text-white font-bold text-lg">My Website</h1>
+      <img src={Logo}  alt="Logo" className="h-12 mr-4"/>
+      <h1 className="text-white font-bold text-lg">Profile</h1>
     </div>
     <div className="flex items-center">
       <Link to="/" className="text-white font-bold text-lg hover:text-gray-300 p-2">Home</Link>

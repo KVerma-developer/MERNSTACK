@@ -51,17 +51,17 @@ const Contact = () => {
       <div className="bg-white p-4 rounded-lg shadow-md">
       <FiSmartphone/>
         <h2 className="text-lg font-semibold mb-2">Phone</h2>
-        <p className="text-gray-700">(123) 456-7890</p>
+        <p className="text-gray-700">+91 7270813318</p>
       </div>
       <div className="bg-white p-4 rounded-lg shadow-md">
       <MdEmail/>
         <h2 className="text-lg font-semibold mb-2">Email</h2>
-        <p className="text-gray-700">example@gmail.com</p>
+        <p className="text-gray-700">kanhaiyaverma.developer@gmail.com</p>
       </div>
       <div className="bg-white p-4 rounded-lg shadow-md">
         <MdOutlineMapsHomeWork/>
         <h2 className="text-lg font-semibold mb-2">Address</h2>
-        <p className="text-gray-700">Your Address</p>
+        <p className="text-gray-700">Sandila Distt. Hardoi ,241204 Uttar Pradesh</p>
       </div>
       
       
